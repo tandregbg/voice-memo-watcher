@@ -1,6 +1,18 @@
 # voice-memo-watcher
 
-A lightweight macOS daemon that monitors the Voice Memos folder and copies new recordings to a destination of your choice with clean, sortable filenames.
+**Capture thoughts anywhere with your Apple Watch or iPhone, and have them automatically collected, renamed, and ready for transcription on your Mac.**
+
+Voice Memos is the fastest way to capture an idea — tap your wrist, speak, done. But the recordings land in a sandboxed folder with ugly hex filenames and no easy way to process them further. This tool bridges that gap: it watches for new Voice Memos as they sync via iCloud, renames them to clean sortable timestamps (`250423_142214.m4a`), and copies them to a destination of your choice — a local folder, a network share, or a Dropbox directory where an external transcription service can pick them up.
+
+Use it as a building block for a voice-first workflow:
+- **Capture** on Apple Watch / iPhone via the built-in Voice Memos app
+- **Sync** automatically to your Mac via iCloud
+- **Collect** with this daemon — renamed, deduplicated, copied to your target folder
+- **Transcribe** with any service that watches a folder or accepts uploads (Whisper, Deepgram, AssemblyAI, or your own pipeline)
+
+Zero dependencies. Single Python file. Runs as a macOS LaunchDaemon.
+
+---
 
 ## What it does
 
