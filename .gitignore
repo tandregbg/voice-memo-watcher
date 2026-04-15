@@ -1,0 +1,11 @@
+logs/
+archive/
+*.tar.gz
+.env
+*.state.json
+.DS_Store
+__pycache__/
+*.pyc
+SERVICE.md
+*.plist
+!*.plist.template
